@@ -6,7 +6,7 @@ const BotCollection = ({ addBotToArmy }) => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch('https://https://bot-battlr-json-server-rho.vercel.app/bots')
+    fetch('https://bot-battlr-json-server-rho.vercel.app/bots')
       .then(response => {
         if (!response.ok) {
           throw new Error('Network response was not ok');

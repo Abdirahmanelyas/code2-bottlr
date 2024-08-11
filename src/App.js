@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import BotCollection from './components/BotCollection';
 import YourBotArmy from './components/YourBotArmy';
-import './styles.css'; 
+// import './styles.css'; 
 
 const App = () => {
   const [army, setArmy] = useState([]);
@@ -17,7 +17,7 @@ const App = () => {
   };
     
   const dischargeBot = (id) => {
-    fetch(`https://https://bot-battlr-json-server-rho.vercel.app/bots/${id}`,{ method: 'DELETE' })
+    fetch(`https://bot-battlr-json-server-rho.vercel.app/bots/${id}`,{ method: 'DELETE' })
       .then(() => {
         setArmy(army.filter(b => b.id !== id));
       });
